@@ -1,16 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button, { ButtonSize, ButtonType } from './components/Button/button.tsx';
+
 
 const App: React.FC = () => {
-  const a = "123"
-  if (a == "123") {
-
-  }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Button>Hello</Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Hello</Button>
+        <Button disabled={ButtonType.Primary} size={ButtonSize.Large}>Hello</Button>
+        <Button btnType={ButtonType.Link} href="http://www.baidu.com">Baidu Link</Button>
+        <h1>Hello world</h1>
+        <h2>Hello world</h2>
+        <h3>Hello world</h3>
+        <hr />
+        <code>
+          const a="b"
+        </code>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
