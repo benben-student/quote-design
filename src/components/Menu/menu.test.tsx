@@ -17,9 +17,9 @@ const testVerProps: MenuProps = {
 const generateMenu = (props: MenuProps) => {
     return (
         <Menu {...props}>
-            <MenuItem index={0}>active</MenuItem>
-            <MenuItem index={1} disabled>disabled</MenuItem>
-            <MenuItem index={2}>xyz</MenuItem>
+            <MenuItem>active</MenuItem>
+            <MenuItem disabled>disabled</MenuItem>
+            <MenuItem>xyz</MenuItem>
         </Menu>
     )
 }
@@ -51,8 +51,8 @@ describe("test Menu and MenuItem component", () => {
     })
     it("should render vertical mode when is set to vertical", () => {
         cleanup()
-        const wrapper=render(generateMenu(testVerProps))
-        const menuElement=wrapper.getByTestId("test-menu")
+        const wrapper = render(generateMenu(testVerProps))
+        const menuElement = wrapper.getByTestId("test-menu")
         expect(menuElement).toHaveClass("menu-vertical")
     })
 })
