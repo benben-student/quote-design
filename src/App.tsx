@@ -1,4 +1,4 @@
-import React, { lazy, useState } from 'react';
+import React, {  useState } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from "@fortawesome/free-solid-svg-icons"
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,7 +6,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons"
 import MenuItem from './components/Menu/menuItem.tsx';
 import Menu from './components/Menu/menu.tsx';
 import SubMenu from './components/Menu/subMenu.tsx';
-import Icon from './components/Icon/icon.tsx';
+// import Icon from './components/Icon/icon.tsx';
 import Transition from './components/Transition/transition.tsx'
 import Button from './components/Button/button.tsx'
 library.add(fas)
